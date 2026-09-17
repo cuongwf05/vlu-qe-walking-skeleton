@@ -1,5 +1,5 @@
 function login(username, password) {
-  return username === 'admin' && password === '1234';
+  return username === 'admin' && password === '123';
 }
 
 if (typeof document !== 'undefined') {
