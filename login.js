@@ -1,8 +1,7 @@
 function login(username, password) {
-  return username === 'admin' && password === '123';
+  return username === 'admin' && password === '1234';
 }
 
-// Chỉ chạy phần giao diện khi file được mở trong trình duyệt.
 if (typeof document !== 'undefined') {
   const form = document.getElementById('loginForm');
   const message = document.getElementById('message');
@@ -21,7 +20,6 @@ if (typeof document !== 'undefined') {
   }
 }
 
-// Cho Jest dùng hàm login khi chạy trong Node.js.
 if (typeof module !== 'undefined') {
   module.exports = { login };
 }
